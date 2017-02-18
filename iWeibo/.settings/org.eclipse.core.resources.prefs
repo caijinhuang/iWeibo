@@ -1,0 +1,11 @@
+eclipse.preferences.version=1
+encoding//src/com/iweibo/MainActivity.java=UTF-8
+encoding//src/com/iweibo/OAuthActivity.java=UTF-8
+encoding//src/com/iweibo/dao/UserDao.java=UTF-8
+encoding//src/com/iweibo/db/DBhelper.java=UTF-8
+encoding//src/com/iweibo/db/DBinfo.java=UTF-8
+encoding//src/com/iweibo/pojo/User.java=UTF-8
+encoding//src/com/iweibo/util/AccessTokenKeeper.java=UTF-8
+encoding//src/com/iweibo/util/AuthListener.java=UTF-8
+encoding//src/com/iweibo/util/Constants.java=UTF-8
+encoding//src/com/iweibo/util/Tools.java=UTF-8

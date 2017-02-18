@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tab_frame"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+
+        <TextView
+            android:id="@+id/rd_home"
+            style="@style/main_btn_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/home_icon"
+            android:text="@string/home" />
+
+        <TextView
+            android:id="@+id/rd_at"
+            style="@style/main_btn_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/at_icon"
+            android:text="@string/at" />
+
+        <TextView
+            android:id="@+id/rd_msg"
+            style="@style/main_btn_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/msg_icon"
+            android:text="@string/msg" />
+
+        <TextView
+            android:id="@+id/rd_more"
+            style="@style/main_btn_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/more_icon"
+            android:text="@string/more" />
+
+</LinearLayout>

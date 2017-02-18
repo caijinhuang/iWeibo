@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.iweibo"
+    android:versionCode="1"
+    android:versionName="2.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+    <!-- 获取网络状态权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!-- 获取网络接入权限 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- 获取wifi状态权限 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_weibo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.iweibo.MainActivity"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.Black.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <!-- 授权页面 -->
+        <activity android:name="com.iweibo.OAuthActivity"></activity>
+        <activity android:name="com.iweibo.WebViewActivity"></activity>
+        <!-- 登录页面 -->
+        <activity android:name="com.iweibo.LoginActivity"
+            	  android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
+        <!-- 加载微博页面 -->
+        <activity android:name="com.iweibo.HomeActivity"
+            	  android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
+        <!-- 加载最新微博内容 -->
+        <activity android:name="com.iweibo.ListHomeActivity">
+        </activity>
+        <!-- 加载个人发表的微博 -->
+        <activity android:name="com.iweibo.GetuserTimelineActivity">
+        </activity>
+        <!-- 错误页面 -->
+        <activity android:name="com.iweibo.MyMsgActivity">
+        </activity>
+        <!-- 加载单条详细微博页面 -->
+        <activity android:name="com.iweibo.ContentActivity"
+            	  android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
+        <!-- 写微博页面 -->
+        <activity android:name="com.iweibo.Write_Weibo_Activity"
+            	  android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
+        
+        <!-- 必须注册在微博授权，分享微博时候用到 -->
+        <activity android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser" 
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustResize"
+            android:exported="false" >
+        </activity>
+    </application>
+
+</manifest>
